@@ -4,7 +4,7 @@ This project is a frontend implementation of the **Supreme Group** website, buil
 
 ## Live Demo
 
-[Deployed on Vercel](https://supreme-group-psi.vercel.app/)
+[Deployed on Vercel](https://supreme-app.vercel.app/)
 
 ## Repository
 
