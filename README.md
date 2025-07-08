@@ -19,8 +19,7 @@ This project is a frontend implementation of the **Supreme Group** website, buil
 | **Framework**        | [Next.js](https://nextjs.org)           | Chosen for its file-based routing, built-in SSR, SEO benefits, and performance. |
 | **Language**         | JavaScript (ES6+)                       | Offers rapid prototyping and is widely used with React ecosystem.               |
 | **Styling**          | [Tailwind CSS](https://tailwindcss.com) | Provides utility-first responsive design and excellent developer experience.    |
-| **Build Tool**       | [Vite](https://vitejs.dev)              | Offers faster dev server start and module hot reloading than Webpack.           |
-| **State Management** | React State + Context API               | Sufficient for the scope; avoids over-engineering with Redux/Zustand.           |
+| **State Management** | React State                             | Sufficient for the scope; avoids over-engineering with Redux/Zustand.           |
 | **Hosting**          | [Vercel](https://vercel.com)            | Optimized for Next.js deployments and provides free hosting.                    |
 
 ---
@@ -111,7 +110,6 @@ Implemented following **WCAG** and **ARIA** standards:
 Used **Framer Motion** for smooth and performant scroll-in and tab-based animations:
 
 - Vertical tab transitions
-- Animated video transitions on scroll or tab click
 - Subtle fade-in and slide effects on sections
 
 ---
@@ -121,7 +119,6 @@ Used **Framer Motion** for smooth and performant scroll-in and tab-based animati
 Testing wasn't implemented due to the limited timeframe but can be added using:
 
 - **Unit Tests:** React Testing Library + Jest
-- **E2E Tests:** Cypress or Playwright for full interaction testing
 
 ---
 
@@ -138,27 +135,15 @@ Testing wasn't implemented due to the limited timeframe but can be added using:
 ## Assumptions & Decisions
 
 - Only desktop and mobile designs were available. Tablet layouts were inferred based on responsive best practices.
-- State management is minimal, so `Context API` is sufficient.
 - Static images and data are used from the provided design. No backend API integration assumed.
 
 ---
 
 ## Challenges Faced
 
-| Challenge                    | Solution                                                                                |
-| ---------------------------- | --------------------------------------------------------------------------------------- |
-| Precise Figma replication    | Used Tailwind spacing and typography utilities for pixel-perfect design                 |
-| Video scroll synchronization | Implemented scroll-driven animations using refs and state                               |
-| Vertical Tabs UX             | Built smooth animated tab transitions with active indicators and scroll-based switching |
-
----
-
-## Future Improvements
-
-- Add **unit & integration tests** for component stability
-- Implement **theme switching** or dark mode
-- Add **CMS integration** for content management
-- Enhance **video controls** and preload strategies
+| Challenge                 | Solution                                                                |
+| ------------------------- | ----------------------------------------------------------------------- |
+| Precise Figma replication | Used Tailwind spacing and typography utilities for pixel-perfect design |
 
 ---
 
